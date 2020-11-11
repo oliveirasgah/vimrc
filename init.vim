@@ -23,6 +23,7 @@ let g:NERDTreeDirArrowExpandable = '▸'
 let g:NERDTreeDirArrowCollapsible = '▾'
 let g:NERDTreeGitStatusGitBinPath = 'C:\Users\gabriel.santos\AppData\Local\Programs\Git\bin\git.exe'
 let g:NERDTreeGitStatusUseNerdFonts = 1
+let g:NERDTreeShowBookmarks = 1
 
 let g:airline_powerline_fonts = 1
 
