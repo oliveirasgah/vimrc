@@ -10,6 +10,7 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
+Plug 'Yggdroot/indentLine'
 if !has('win32')
     Plug 'ncm2/ncm2'
     Plug 'roxma/nvim-yarp'
