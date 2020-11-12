@@ -10,8 +10,10 @@ Plug 'sheerun/vim-polyglot'
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-fugitive'
 Plug 'airblade/vim-gitgutter'
-Plug 'ncm2/ncm2'
-Plug 'roxma/nvim-yarp'
+if !has('win32')
+    Plug 'ncm2/ncm2'
+    Plug 'roxma/nvim-yarp'
+endif
 call plug#end()
 
 " Change color scheme
@@ -60,9 +62,10 @@ let g:airline_symbols.maxlinenr = ''
 let g:airline_symbols.dirty='⚡'
 
 " enable ncm2 for all buffers
-autocmd BufEnter * call ncm2#enable_for_buffer()
-set completeopt=noinsert,menuone,noselect
-
+if !has('win32')
+    autocmd BufEnter * call ncm2#enable_for_buffer()
+    set completeopt=noinsert,menuone,noselect
+endif
 
 if has('win32')
     let g:airline_theme='dark'
