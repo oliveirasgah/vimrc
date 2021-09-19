@@ -3,15 +3,19 @@ call plug#begin()
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'scrooloose/nerdtree'
-Plug 'mattn/emmet-vim'
+Plug 'Valloric/YouCompleteMe'
 Plug 'dracula/vim'
 call plug#end()
 
-" Remap emmet shortcut
-let g:user_emmet_leader_key=','
+" Mapping the leader key
+let g:mapleader=','
+
+" Mapping tabs
+nmap <F11> :tabNext<CR>
+nmap <F12> :tabnext<CR>
 
 " Map <C-n> to open NERDtree
-map <C-n> :NERDTreeToggle<CR>
+nmap <F4> :NERDTreeToggle<CR>
 
 " Change arrows in NERDtree
 let g:NERDTreeDirArrowExpandable = '▸'
@@ -74,5 +78,6 @@ set encoding=utf-8
 
 " vim-airline settings
 let g:airline#extensions#tabline#enabled = 1
-let g:airline#extensions#tabline#left_sep = '>'
-let g:airline#extensions#tabline#left_alt_sep = '>'
+let g:airline#extensions#tabline#left_sep = ''
+let g:airline#extensions#tabline#left_alt_sep = ''
+let g:airline_powerline_fonts = 1
