@@ -14,6 +14,12 @@ let g:mapleader=','
 nmap <F11> :tabNext<CR>
 nmap <F12> :tabnext<CR>
 
+" Mapping yanking commands for clipboard
+noremap <Leader>y "+y
+noremap <Leader>p "+p
+noremap <Leader>Y "*y
+noremap <Leader>P "*p
+
 " Map <C-n> to open NERDtree
 nmap <F4> :NERDTreeToggle<CR>
 
